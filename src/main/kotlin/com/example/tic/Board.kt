@@ -37,9 +37,9 @@ class Board(size: Int) {
 
 
             while (i < k && notMatched) {
-                if (board[row][i] != board[row][i + 1]) {
+                if (board[row][i] != board[row][i + 1])
                     notMatched = false
-                }
+
                 i++
             }
 
@@ -144,8 +144,8 @@ class Board(size: Int) {
     }
 
     fun isMoveRemaining(): Boolean {
-        for (i in 0..board.size) {
-            for (j in 0..board.size) {
+        for (i in 0 until board.size) {
+            for (j in 0 until board.size) {
                 if (board[i][j] == '-') {
                     return true
                 }
