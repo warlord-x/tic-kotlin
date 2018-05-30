@@ -130,10 +130,6 @@ class Board(size: Int) {
         printBoard()
         when (weightMove(sign)) {
             1 -> {
-                println("Game over. I win!!")
-                System.exit(1)
-            }
-            -1 -> {
                 println("Game over. Player with Sign {$sign} wins!!")
                 System.exit(1)
             }
